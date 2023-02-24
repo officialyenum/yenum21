@@ -2,6 +2,7 @@ import React, { Dispatch, FC, SetStateAction, useState } from 'react';
 import Dashboard from '../components/Dashoard';
 import Nav from '../components/Nav';
 import NavItem from '../components/NavItem';
+import Rewrite from '../components/Rewrite';
 
 interface HomeProps {
     setDarkMode: Dispatch<SetStateAction<boolean>>,
@@ -53,6 +54,7 @@ const Home: FC<HomeProps> = ({ setDarkMode, darkToggle }) => {
         </Nav>
         <main className="bg-gray-800">
             {showDashboard &&  <Dashboard onHandleClick={onHandleClick} />}
+            {showRewrite &&  <Rewrite />}
         </main>
     </>
   );
