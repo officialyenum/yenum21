@@ -1,4 +1,4 @@
-import { Link, textDecoration } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react';
 import React, { FC } from 'react';
 
 
