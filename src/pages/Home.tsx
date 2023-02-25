@@ -3,6 +3,7 @@ import Dashboard from '../components/Dashoard';
 import { Tabs, TabList, Tab, TabPanels,TabPanel, Heading, Box, Container } from '@chakra-ui/react';
 import Rewrite from '../components/Rewrite';
 import Nav from '../components/Nav';
+import Summarize from '../components/Summarize';
 
 interface HomeProps {
     darkToggle?: boolean
@@ -49,21 +50,21 @@ const Home: FC<HomeProps> = () => {
             <Nav/>
             <Tabs>
                 <TabList>
-                <Tab>Dashboard</Tab>
-                <Tab>Rewrite</Tab>
-                <Tab>Summarize</Tab>
+                    <Tab>Dashboard</Tab>
+                    <Tab>Rewrite</Tab>
+                    <Tab>Summarize</Tab>
                 </TabList>
 
                 <TabPanels>
-                <TabPanel>
-                    <Dashboard title={'Home Page'} />
-                </TabPanel>
-                <TabPanel>
-                    <Rewrite/>
-                </TabPanel>
-                <TabPanel>
-                    <p>Summarize Tab!</p>
-                </TabPanel>
+                    <TabPanel>
+                        <Dashboard title={'Home Page'} />
+                    </TabPanel>
+                    <TabPanel>
+                        <Rewrite/>
+                    </TabPanel>
+                    <TabPanel>
+                        <Summarize/>
+                    </TabPanel>
                 </TabPanels>
             </Tabs>
         </Container>

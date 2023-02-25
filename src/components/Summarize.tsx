@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import rewriteLogo from '../assets/rewrite.png';
+import summarizeLogo from '../assets/summarize.png';
 import { useToast, Stack, IconButton, Textarea, Box, Button, Fade, useDisclosure, Select, Image } from '@chakra-ui/react'
 import { CloseIcon } from '@chakra-ui/icons';
 import { AI21 } from "@officialyenum/ai21";
@@ -8,27 +8,27 @@ interface TextProps {
     text: string
 }
 const token = process.env.REACT_APP_AI_21_KEY
-const Rewrite: FC<any> = () => {
+const Summarize: FC<any> = () => {
     const toast = useToast()
     const [isLoading, setIsLoading] = useState(false)
-    const [intent, setIntent] = useState("")
-    const [rewriteText, setRewriteText] = useState("")
+    const [type, setType] = useState("")
+    const [summarizeText, setSummarizeText] = useState("")
     const [responseText, setResponseText] = useState<Array<TextProps>>([])
     const { isOpen, onToggle } = useDisclosure()
     
     const resetPage = () => {
         setIsLoading(false)
-        setRewriteText("")
+        setSummarizeText("")
         setResponseText([])
-        setIntent("")
+        setType("")
         onToggle();
     }
-    const handleRewriteSubmit = async () => {
+    const handleSummarizeSubmit = async () => {
         setIsLoading(true)
-        if (rewriteText.length === 0 || intent.length === 0) {
+        if (summarizeText.length === 0 || type.length === 0) {
             toast({
                 title: 'An Error Occured',
-                description: "Please Ensure Rewrite and Intent are filled",
+                description: "Please Ensure Text and Type are filled",
                 status: 'error',
                 duration: 9000,
                 isClosable: true,
@@ -37,15 +37,14 @@ const Rewrite: FC<any> = () => {
             return
         }
         const data = {
-            text: rewriteText,
-            intent: intent // casual, formal, short
+            text: summarizeText,
+            type: type // casual, formal, short
         }
         const ai = new AI21(token);
-        const resp = await ai.rewrite(data)
+        const resp = await ai.summarize(data)
         console.log(resp);
         console.log(resp?.status);
         console.log(resp?.message);
-
         if(!resp) {
             toast({
                 title: 'AI Error',
@@ -58,7 +57,7 @@ const Rewrite: FC<any> = () => {
             return 
         }
         
-        if (resp?.status === 'failed') {
+        if (resp?.status !== 'success') {
             toast({
                 title: 'AI Error',
                 description: resp?.message,
@@ -69,8 +68,9 @@ const Rewrite: FC<any> = () => {
             setIsLoading(false)
             return
         }
-        const suggestions = resp?.data["suggestions"];
-        suggestions.forEach((item: TextProps) => {
+
+        const summaries = resp?.data["summaries"];
+        summaries.forEach((item: TextProps) => {
             responseText.push(item);
         })
         setIsLoading(false)
@@ -83,8 +83,8 @@ const Rewrite: FC<any> = () => {
             <Image
                 boxSize={75}
                 rounded={'md'}
-                src={rewriteLogo}
-                alt='Rewrite Logo'
+                src={summarizeLogo}
+                alt='Summarize Logo'
             />
             <Fade in={isOpen}>
                     <IconButton 
@@ -98,20 +98,20 @@ const Rewrite: FC<any> = () => {
         {!isOpen && (
             <>
                 <Select 
-                    placeholder='Select Intent Type' 
+                    placeholder='Select Type' 
                     size={['sm','md']} 
                     mb={2}
-                    onChange={e => setIntent(e.target.value)}
-                    value={intent}
+                    onChange={e => setType(e.target.value)}
+                    value={type}
                 >
-                    <option value='general'>General</option>
-                    <option value='casual'>Casual</option>
-                    <option value='formal'>Formal</option>
+                    <option value='wikipedia_article'>Wikipedia Article</option>
+                    <option value='financial_report'>Financial Report</option>
+                    <option value='academic_paper'>Academic Paper</option>
                 </Select>
                 <Textarea
-                    value={rewriteText}
-                    onChange={e => setRewriteText(e.target.value)}
-                    placeholder='Enter text to be Re Written Here'
+                    value={summarizeText}
+                    onChange={e => setSummarizeText(e.target.value)}
+                    placeholder='Enter text to be Summarized Here'
                     size={['xs','sm','md']}
                 />
             </>
@@ -138,11 +138,11 @@ const Rewrite: FC<any> = () => {
                 float={'right'}
                 isLoading={isLoading}
                 colorScheme='blue'
-                onClick={handleRewriteSubmit}>Rewrite</Button>
+                onClick={handleSummarizeSubmit}>Summarize</Button>
         )}
         
     </>
   );
 };
 
-export default Rewrite;
+export default Summarize;
