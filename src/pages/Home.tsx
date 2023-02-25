@@ -1,15 +1,14 @@
-import React, { Dispatch, FC, SetStateAction, useState } from 'react';
+import React, { FC, useState } from 'react';
 import Dashboard from '../components/Dashoard';
-import Nav from '../components/Nav';
-import NavItem from '../components/NavItem';
+import { Tabs, TabList, Tab, TabPanels,TabPanel, Heading, Box, Container } from '@chakra-ui/react';
 import Rewrite from '../components/Rewrite';
+import Nav from '../components/Nav';
 
 interface HomeProps {
-    setDarkMode: Dispatch<SetStateAction<boolean>>,
-    darkToggle: boolean
+    darkToggle?: boolean
 }
 
-const Home: FC<HomeProps> = ({ setDarkMode, darkToggle }) => {
+const Home: FC<HomeProps> = () => {
     const [showDashboard, setShowDashboard] = useState(true)
     const [showSummarize, setShowSummarize] = useState(false)
     const [showRewrite, setShowRewrite] = useState(false)
@@ -46,16 +45,28 @@ const Home: FC<HomeProps> = ({ setDarkMode, darkToggle }) => {
 
   return (
     <>
-        <Nav>
-            <NavItem onHandleClick={onHandleClick} isActive={showDashboard} children={"Dashboard"}/>
-            <NavItem onHandleClick={onHandleClick} isActive={showSummarize} children={"Summarize"}/>
-            <NavItem onHandleClick={onHandleClick} isActive={showRewrite} children={"Rewrite"}/>
-            <NavItem onHandleClick={onHandleClick} isActive={showParaphrase} children={"Paraphrase"}/>
-        </Nav>
-        <main className="bg-gray-800">
-            {showDashboard &&  <Dashboard onHandleClick={onHandleClick} />}
-            {showRewrite &&  <Rewrite />}
-        </main>
+        <Container maxW={['sm','md', 'xl']}>
+            <Nav/>
+            <Tabs>
+                <TabList>
+                <Tab>Dashboard</Tab>
+                <Tab>Rewrite</Tab>
+                <Tab>Summarize</Tab>
+                </TabList>
+
+                <TabPanels>
+                <TabPanel>
+                    <Dashboard title={'Home Page'} />
+                </TabPanel>
+                <TabPanel>
+                    <Rewrite/>
+                </TabPanel>
+                <TabPanel>
+                    <p>Summarize Tab!</p>
+                </TabPanel>
+                </TabPanels>
+            </Tabs>
+        </Container>
     </>
   );
 };

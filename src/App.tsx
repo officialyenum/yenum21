@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
+import React from 'react';
 import './App.css';
 import Home from './pages/Home';
+import { Theme } from './Theme';
 
 function App() {
-  const [darkToggle, setDarkToggle] = useState(false)
   return (
-    <div className='bg-white dark:bg-black'>
-      <Home setDarkMode={setDarkToggle} darkToggle={darkToggle} />
+    <div>
+      <ChakraProvider theme={Theme}>
+        <Home />
+      </ChakraProvider>
     </div>
   );
 }
