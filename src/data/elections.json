@@ -17,7 +17,7 @@
         "id": 3,
         "state": "Akwa Ibom",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [49541, 46093,  4296, 73689],
+        "votes": [160620, 132683,  7796, 214012],
         "total": 0
     },
     {
@@ -50,7 +50,7 @@
         "id": 8,
         "state": "Borno",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [44283, 213,  731, 15223]
+        "votes": [252282, 7205,  4626, 190921]
     },
     {
         "id": 9,
@@ -74,7 +74,7 @@
         "id": 12,
         "state": "Edo",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [22694, 104958,  825, 17906]
+        "votes": [144471, 331163,  2743, 89585]
     },
     {
         "id": 13,
@@ -92,7 +92,7 @@
         "id": 15,
         "state": "F.C.T",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [90902, 281987,  4517, 73743]
+        "votes": [90902, 281717,  4517, 74194]
     },
     {
         "id": 16,
@@ -118,7 +118,7 @@
         "id": 19,
         "state": "Kaduna",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [399293, 294493,  92969, 554460],
+        "votes": [399293, 294494,  92969, 554360],
         "total": 0
     },
     {
@@ -146,21 +146,21 @@
         "id": 23,
         "state": "Kogi",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [29986, 8408,  166, 19587],
+        "votes": [240751, 56217,  4669, 145104],
         "total": 0
     },
     {
         "id": 24,
         "state": "Kwara",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [263572, 31116,  3101, 136909],
+        "votes": [263572, 31166,  3141, 136909],
         "total": 0
     },
     {
         "id": 25,
         "state": "Lagos",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [572582, 582454,  8442, 75750],
+        "votes": [572606, 582454,  8442, 75750],
         "total": 0
     },
     {
@@ -211,7 +211,7 @@
         "id": 33,
         "state": "Rivers",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [148979, 169614,  1115, 84992]
+        "votes": [231593, 175555,  1527, 88261]
     },
     {
         "id": 34,
