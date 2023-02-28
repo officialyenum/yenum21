@@ -1,6 +1,7 @@
 
 import { Tr, Td } from '@chakra-ui/react';
 import React, { FC } from 'react';
+import { formatNumber } from '../helpers';
 // import yenum21Light from "../assets/yenum21Light.png";
 // import yenum21Dark from "../assets/yenum21Dark.png";
 
@@ -30,10 +31,10 @@ const ElectionItem: FC<ElectionType> = ({state, candidates, votes}) => {
     <>
         <Tr>
           <Td>{state}</Td>
-          <Td>{votes[0]}</Td>
-          <Td>{votes[1]}</Td>
-          <Td>{votes[2]}</Td>
-          <Td>{votes[3]}</Td>
+          <Td>{formatNumber(votes[0])}</Td>
+          <Td>{formatNumber(votes[1])}</Td>
+          <Td>{formatNumber(votes[2])}</Td>
+          <Td>{formatNumber(votes[3])}</Td>
           <Td>{winnerName}</Td>
           <Td bgColor={`${apcPerc > 25 ? 'green':'red'}.500`} isNumeric>{apcPerc.toFixed(1)}</Td>
           <Td bgColor={`${lpPerc > 25 ? 'green':'red'}.500`} isNumeric>{lpPerc.toFixed(1)}</Td>
