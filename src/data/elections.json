@@ -34,7 +34,7 @@
         "id": 5,
         "state": "Imo",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [66171, 352904,  1536, 30344],
+        "votes": [66171, 352904,  1536, 30044],
         "total": 0
     },
     {
@@ -48,7 +48,7 @@
         "id": 7,
         "state": "Kaduna",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [399293, 294494,  92969, 554360],
+        "votes": [399293, 294493,  92969, 554460],
         "total": 0
     },
     {
