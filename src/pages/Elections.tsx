@@ -1,7 +1,6 @@
 import { 
-  TableContainer, Table, Thead, Tbody, Tr, Th, Tfoot,Text, 
-  Flex, Spacer, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Box, 
-  StatGroup,Stat,StatLabel,StatNumber,StatArrow, StatHelpText, Progress } from '@chakra-ui/react'
+  TableContainer, Table, Thead, Tbody, Tr, Th, Tfoot, 
+  Flex, Spacer, Box } from '@chakra-ui/react'
 import React, { FC, useState, useEffect } from 'react'
 import CandidateStat from '../components/CandidateStat';
 import ElectionItem from '../components/ElectionItem';
