@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "state": "Adamawa",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [182881, 105648,  8006, 417611],
+        "total": 0
+    },
+    {
+        "id": 2,
+        "state": "Enugu",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [4772, 428640,  1808, 15749]
+    },
+    {
+        "id": 3,
+        "state": "Gombe",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [146977, 26160,  10520, 319123]
+    },
+    {
+        "id": 4,
+        "state": "Jigawa",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [421390, 1889,  98234, 386587],
+        "total": 0
+    },
+    {
+        "id": 5,
+        "state": "Katsina",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [482283, 6376,  69386, 489045],
+        "total": 0
+    },
+    {
+        "id": 6,
+        "state": "Kwara",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [263572, 31116,  3101, 136909],
+        "total": 0
+    },
+    {
+        "id": 7,
+        "state": "Lagos",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [572582, 582454,  8442, 75750],
+        "total": 0
+    },
+    {
+        "id": 8,
+        "state": "Ogun",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [341554, 85829,  2200, 123831]
+    },
+    {
+        "id": 1,
+        "state": "Ondo",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [369924, 47350,  930, 115463]
+    },
+    {
+        "id": 9,
+        "state": "Osun",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [343945, 23283,  713, 354366]
+    },
+    {
+        "id": 10,
+        "state": "Oyo",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [449884, 99110,  4095, 182977]
+    },
+    {
+        "id": 11,
+        "state": "Yobe",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [151459, 2406,  18270, 198567]
+    }
+]
