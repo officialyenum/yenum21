@@ -1,143 +1,240 @@
 [
     {
         "id": 1,
+        "state": "Abia",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [8914, 327095,  1239, 22676],
+        "total": 0
+    },
+    {
+        "id": 2,
         "state": "Adamawa",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [182881, 105648,  8006, 417611],
         "total": 0
     },
     {
-        "id": 2,
+        "id": 3,
+        "state": "Akwa Ibom",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [49541, 46093,  4296, 73689],
+        "total": 0
+    },
+    {
+        "id": 4,
+        "state": "Anambra",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [5111, 584621,  1967, 9036],
+        "total": 0
+    },
+    {
+        "id": 5,
+        "state": "Bauchi",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [316694, 27373,  72103, 426607],
+        "total": 0
+    },
+    {
+        "id": 6,
         "state": "Bayelsa",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [42572, 49975,  540, 68818]
     },
     {
-        "id": 3,
-        "state": "Cross River",
+        "id": 7,
+        "state": "Benue",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
-        "votes": [90183, 341866,  3122, 161200]
+        "votes": [310468, 308372,  4740, 130081]
     },
     {
-        "id": 4,
-        "state": "Delta",
+        "id": 8,
+        "state": "Borno",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [44283, 213,  731, 15223]
+    },
+    {
+        "id": 9,
+        "state": "Cross River",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [130520, 179917,  1644, 95425]
     },
     {
-        "id": 5,
+        "id": 10,
+        "state": "Delta",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [90183, 341866,  3122, 161600]
+    },
+    {
+        "id": 11,
         "state": "Ebonyi",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [42402, 259738,  1661, 13508]
     },
     {
-        "id": 6,
+        "id": 12,
+        "state": "Edo",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [22694, 104958,  825, 17906]
+    },
+    {
+        "id": 13,
         "state": "Ekiti",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [201494, 11397,  264, 89554]
     },
     {
-        "id": 7,
+        "id": 14,
         "state": "Enugu",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [4772, 428640,  1808, 15749]
     },
     {
-        "id": 8,
+        "id": 15,
+        "state": "F.C.T",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [90902, 281987,  4517, 73743]
+    },
+    {
+        "id": 16,
         "state": "Gombe",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [146977, 26160,  10520, 319123]
     },
     {
-        "id": 9,
+        "id": 17,
         "state": "Imo",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [66171, 352904,  1536, 30044],
         "total": 0
     },
     {
-        "id": 10,
+        "id": 18,
         "state": "Jigawa",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [421390, 1889,  98234, 386587],
         "total": 0
     },
     {
-        "id": 11,
+        "id": 19,
         "state": "Kaduna",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [399293, 294493,  92969, 554460],
         "total": 0
     },
     {
-        "id": 12,
+        "id": 20,
         "state": "Kano",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [517341, 28513,  997279, 131716],
         "total": 0
     },
     {
-        "id": 13,
+        "id": 21,
         "state": "Katsina",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [482283, 6376,  69386, 489045],
         "total": 0
     },
     {
-        "id": 14,
+        "id": 22,
+        "state": "Kebbi",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [248088, 10682,  5038, 285175],
+        "total": 0
+    },
+    {
+        "id": 23,
+        "state": "Kogi",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [29986, 8408,  166, 19587],
+        "total": 0
+    },
+    {
+        "id": 24,
         "state": "Kwara",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [263572, 31116,  3101, 136909],
         "total": 0
     },
     {
-        "id": 15,
+        "id": 25,
         "state": "Lagos",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [572582, 582454,  8442, 75750],
         "total": 0
     },
     {
-        "id": 16,
+        "id": 26,
         "state": "Nassarawa",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [172922, 191361,  12715, 147093],
         "total": 0
     },
     {
-        "id": 17,
+        "id": 27,
+        "state": "Niger",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [375183, 80452,  21836, 284898],
+        "total": 0
+    },
+    {
+        "id": 28,
         "state": "Ogun",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [341554, 85829,  2200, 123831]
     },
     {
-        "id": 18,
+        "id": 29,
         "state": "Ondo",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [369924, 47350,  930, 115463]
     },
     {
-        "id": 19,
+        "id": 30,
         "state": "Osun",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [343945, 23283,  713, 354366]
     },
     {
-        "id": 20,
+        "id": 31,
         "state": "Oyo",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [449884, 99110,  4095, 182977]
     },
     {
-        "id": 21,
+        "id": 32,
+        "state": "Plateau",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [307195, 466272,  8869, 243808]
+    },
+    {
+        "id": 33,
+        "state": "Rivers",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [148979, 169614,  1115, 84992]
+    },
+    {
+        "id": 34,
         "state": "Sokoto",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [285444, 6568,  1300, 288679]
     },
     {
-        "id": 22,
+        "id": 45,
+        "state": "Taraba",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [135165, 146315,  12818, 189017]
+    },
+    {
+        "id": 36,
         "state": "Yobe",
         "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
         "votes": [151459, 2406,  18270, 198567]
+    },
+    {
+        "id": 37,
+        "state": "Zamfara",
+        "candidates": ["Tinubu","Obi","Kwankwaso","Atiku"],
+        "votes": [298396, 1660,  4044, 193978]
     }
 ]
